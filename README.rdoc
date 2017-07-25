@@ -1,28 +1,19 @@
-== README
+ 
+ Salesforce API integration with Rails app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ Salesforce known as Customer Relationship Management (CRM) platform. Salesforce provides cloud-based applications for sales, service, marketing.
 
-Things you may want to cover:
+ Installation
+  Add gem 'restforce' into your Gemfile
+  Run ‘bundle install’ or ‘gem install restforce’
 
-* Ruby version
+ Configuration
+  In your application.yml set the following env variables - 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+  SALESFORCE_USERNAME: "username"
+  SALESFORCE_PASSWORD: "password"
+  SALESFORCE_SECURITY_TOKEN: "security token"
+  SALESFORCE_CLIENT_ID: "client id”
+  SALESFORCE_CLIENT_SECRET: "client secret"
+  SALESFORCE_HOST: "host domain name"
+  SALESFORCE_API_VERSION="38.0"
