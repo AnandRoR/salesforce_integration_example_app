@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
 
   #connect to salesforce and try to get all updated or new Contacts
   def self.create_or_update_user_contact_in_salesforce
+    
     search_critera = "LastModifiedDate >= YESTERDAY AND LastModifiedDate <= TODAY"
     #connect to salesforce
     sf = Salesforce::API.connect_to_salesforce

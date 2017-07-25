@@ -11,6 +11,7 @@ class Salesforce::API
   #    end
   #  end 
 
+
   #Establish a connection using the Restforce gem
   def self.connect_to_salesforce
     sf = nil
